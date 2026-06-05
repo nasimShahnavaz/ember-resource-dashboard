@@ -267,14 +267,14 @@ st.html("""
 # =========================================================================
 # 3. DISPLAY HERO BANNER
 # =========================================================================
-hero_image_url = "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070&auto=format&fit=crop"
-
+#hero_image_url = "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070&auto=format&fit=crop"
+hero_image = get_image_base64("Header Img.png")
 banner_html = f"""
 <div class="ember-banner" style="
-    background: linear-gradient(rgba(76, 29, 149, 0.45), rgba(79, 70, 229, 0.55)), url('{hero_image_url}');
+    background: linear-gradient(rgba(76, 29, 149, 0.45), rgba(79, 70, 229, 0.55)), url('{hero_image}');
     background-size: cover;
-    background-position: center 30%;
-    padding: 80px 20px;
+    background-position: center 45%;
+    padding: 120px 20px;
     color: #FFFFFF;
 ">
     <h1 class="banner-title" style="color: #FFFFFF; text-shadow: 2px 4px 10px rgba(0,0,0,0.4); margin: 0 0 8px 0 !important;">
